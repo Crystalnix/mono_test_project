@@ -1,0 +1,4 @@
+[Project]
+Name=cpp_dbus_client
+Manager=KDevCMakeManager
+VersionControl=
