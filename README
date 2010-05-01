@@ -1,0 +1,23 @@
+to BUILD the mono server 
+- cd command_server
+- make 
+ 
+to RUN the server 
+- mono command_server.exe 
+ 
+--------------------
+to BUILD the C++ client (cmake 2.4 should be installed): 
+ 
+- mkdir bin && cd bin 
+- cmake ../cpp_dbus_client/ 
+- make
+ 
+to RUN the client 
+./dbusproxy ARG1 ARG2 ARG3 .. ARGN
+
+
+Notes
+--------------------
+Arguments from client concatenate to one string on server side and send back to client along with number of arguments as return code.
+
+To build C++ server dbus-glib library should be installed.
